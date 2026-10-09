@@ -1,107 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>18+ Access</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Daily Bangla — প্রযুক্তি, শিক্ষা ও জীবনযাপনের বাংলা ব্লগ।">
+  <title>Daily Bangla | বাংলা ব্লগ</title>
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #111111, #3b1025);
-      color: white;
-      padding: 20px;
-    }
-
-    .box {
-      width: 100%;
-      max-width: 500px;
-      text-align: center;
-      background: rgba(255,255,255,0.08);
-      padding: 45px 30px;
-      border-radius: 20px;
-    }
-
-    .age {
-      display: inline-block;
-      background: white;
-      color: black;
-      padding: 8px 15px;
-      border-radius: 30px;
-      font-weight: bold;
-      margin-bottom: 20px;
-    }
-
-    h1 {
-      font-size: 38px;
-      margin-bottom: 15px;
-    }
-
-    p {
-      color: #ddd;
-      line-height: 1.6;
-      margin-bottom: 25px;
-    }
-
-    .enter {
-      display: block;
-      width: 100%;
-      padding: 16px;
-      background: white;
-      color: black;
-      text-decoration: none;
-      border-radius: 12px;
-      font-size: 18px;
-      font-weight: bold;
-    }
-
-    .enter:hover {
-      opacity: 0.85;
-    }
-
-    .small {
-      font-size: 12px;
-      margin-top: 20px;
-      color: #aaa;
-    }
+    :root{--green:#12432f;--green2:#1d6848;--ink:#202a33;--muted:#65717b;--paper:#f4f7f5;--line:#e1e8e3}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.7 Arial,"Noto Sans Bengali",sans-serif}
+    a{color:inherit}header{background:var(--green);color:#fff;padding:24px max(20px,calc((100% - 1100px)/2))}
+    .brand{font-size:clamp(26px,4vw,38px);font-weight:800;letter-spacing:.2px;margin:0}.tagline{margin:2px 0 0;color:#d8eee1}
+    nav{background:var(--green2);padding:0 max(20px,calc((100% - 1100px)/2));display:flex;gap:8px;flex-wrap:wrap}
+    nav a{color:white;text-decoration:none;padding:12px 14px;display:block}nav a:hover{background:#12432f}
+    main{max-width:1100px;margin:auto;padding:24px 18px}.hero{background:#e3f0e8;border-radius:16px;padding:26px;margin-bottom:22px}
+    .hero h2{margin:0 0 8px;font-size:clamp(22px,3vw,32px)}.hero p{margin:0;color:#40564a}
+    .ad-area{background:#fff;border:1px dashed #9db6a5;border-radius:12px;padding:16px;margin:20px 0;text-align:center}
+    .ad-label{font-size:12px;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin:0 0 10px}
+    .ad-links{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+    .ad-link{display:inline-block;padding:10px 14px;background:#fff3d7;border:1px solid #f0d59a;border-radius:9px;text-decoration:none;font-weight:700;color:#65470a}
+    .ad-link:hover{background:#ffe8ac}
+    .section-title{font-size:25px;margin:26px 0 14px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+    article{background:white;border:1px solid var(--line);border-radius:14px;padding:20px;box-shadow:0 4px 16px #153b2410}
+    .category{font-size:13px;font-weight:700;color:var(--green2)}article h3{font-size:21px;line-height:1.5;margin:7px 0}
+    article p{color:#52605a;margin:8px 0 14px}.read-btn{border:0;border-radius:8px;background:var(--green2);color:white;padding:10px 14px;font-size:15px;cursor:pointer}
+    .article-body{display:none;padding-top:10px;border-top:1px solid var(--line);margin-top:12px}
+    .pages{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin:26px 0}.pages a{color:var(--green2)}
+    footer{background:#102f22;color:#e7f1eb;padding:26px 18px;text-align:center;margin-top:28px}footer p{margin:5px}
+    @media(max-width:520px){nav{gap:0}nav a{padding:10px;font-size:14px}.hero{padding:20px}}
   </style>
 </head>
-
 <body>
+<header>
+  <h1 class="brand">Daily Bangla</h1>
+  <p class="tagline">জানুন • শিখুন • এগিয়ে যান</p>
+</header>
+<nav aria-label="প্রধান মেনু">
+  <a href="#home">হোম</a><a href="#bangla">বাংলাদেশ</a><a href="#tech">প্রযুক্তি</a><a href="#education">শিক্ষা</a><a href="#lifestyle">লাইফস্টাইল</a>
+</nav>
+<main id="home">
+  <section class="hero">
+    <h2>বাংলা ভাষায় দরকারি তথ্যের ঠিকানা</h2>
+    <p>প্রযুক্তি, শিক্ষা ও দৈনন্দিন জীবন নিয়ে সহজ ভাষায় পড়ুন। নতুন লেখা নিয়মিত যোগ করা হবে।</p>
+  </section>
 
-  <div class="box">
+  <section class="ad-area" aria-label="বিজ্ঞাপন">
+    <p class="ad-label">Sponsored links · বিজ্ঞাপন</p>
+    <p>নিচের লিংকগুলো বিজ্ঞাপন/বাহ্যিক অফার। ক্লিক করলে অন্য ওয়েবসাইট খুলবে।</p>
+    <div class="ad-links">
+      <a class="ad-link" href="https://auctionr.org/4/464384f9f7fe70da94cb7ee64caa9dcd" target="_blank" rel="sponsored nofollow noopener">স্পন্সরড লিংক ১ ↗</a>
+      <a class="ad-link" href="https://asiafilm.org/4/ed5e778da2cf4a8527f8361960b2d476" target="_blank" rel="sponsored nofollow noopener">স্পন্সরড লিংক ২ ↗</a>
+    </div>
+  </section>
 
-    <div class="age">18+</div>
+  <h2 class="section-title" id="bangla">সাম্প্রতিক আর্টিকেল</h2>
+  <section class="grid">
+    <article>
+      <span class="category" id="tech">প্রযুক্তি</span>
+      <h3>ওয়েবসাইট কীভাবে কাজ করে?</h3>
+      <p>ওয়েবসাইটের কাঠামো, ডিজাইন ও ইন্টারঅ্যাকশন সম্পর্কে প্রাথমিক ধারণা।</p>
+      <button class="read-btn" onclick="toggleArticle(this)">আরও পড়ুন</button>
+      <div class="article-body"><p>HTML ওয়েবপেজের কাঠামো তৈরি করে, CSS রং ও বিন্যাস নিয়ন্ত্রণ করে, আর JavaScript ব্যবহারকারীর কাজের প্রতিক্রিয়া যোগ করে। ওয়েবসাইট অনলাইনে প্রকাশ করতে হোস্টিং বা GitHub Pages-এর মতো সেবা ব্যবহার করা যায়।</p></div>
+    </article>
+    <article>
+      <span class="category" id="education">শিক্ষা</span>
+      <h3>অনলাইনে নতুন দক্ষতা শেখার উপায়</h3>
+      <p>নিয়মিত অনুশীলন ও ছোট প্রজেক্ট দিয়ে শেখার একটি সহজ পদ্ধতি।</p>
+      <button class="read-btn" onclick="toggleArticle(this)">আরও পড়ুন</button>
+      <div class="article-body"><p>প্রথমে একটি নির্দিষ্ট লক্ষ্য ঠিক করুন। নির্ভরযোগ্য শেখার উপকরণ বেছে নিয়ে প্রতিদিন কিছু সময় অনুশীলন করুন। শেখা বিষয় দিয়ে ছোট প্রজেক্ট বানান এবং ভুলগুলো ঠিক করে আবার চেষ্টা করুন।</p></div>
+    </article>
+    <article>
+      <span class="category" id="lifestyle">লাইফস্টাইল</span>
+      <h3>সময় ব্যবস্থাপনার তিনটি কৌশল</h3>
+      <p>কাজের অগ্রাধিকার ঠিক করে দৈনন্দিন সময় আরও ভালোভাবে ব্যবহার করুন।</p>
+      <button class="read-btn" onclick="toggleArticle(this)">আরও পড়ুন</button>
+      <div class="article-body"><p>দিনের কাজের তালিকা লিখুন, সবচেয়ে জরুরি কাজটি আগে করুন এবং কাজের মাঝে ছোট বিরতি নিন। দিনের শেষে কী করতে পেরেছেন তা দেখে পরের দিনের পরিকল্পনা ঠিক করুন।</p></div>
+    </article>
+  </section>
 
-    <h1>Welcome</h1>
+  <section class="ad-area" aria-label="বিজ্ঞাপন">
+    <p class="ad-label">Sponsored links · বিজ্ঞাপন</p>
+    <div class="ad-links">
+      <a class="ad-link" href="https://asiafilm.org/4/de64cac11715ee15daa94bc9102d0537" target="_blank" rel="sponsored nofollow noopener">স্পন্সরড লিংক ৩ ↗</a>
+      <a class="ad-link" href="https://auctionr.org/4/daa6fd42bf25ffa8c2ee416f7f7a6038" target="_blank" rel="sponsored nofollow noopener">স্পন্সরড লিংক ৪ ↗</a>
+    </div>
+  </section>
 
-    <p>
-      This page is intended for adults aged 18 and over.
-      Please confirm that you are 18 or older to continue.
-    </p>
-
-    <a
-      class="enter"
-      href="https://auctionr.org/4/464384f9f7fe70da94cb7ee64caa9dcd"
-      rel="nofollow sponsored">
-      ENTER — I AM 18+
-    </a>
-
-    <p class="small">
-      By continuing, you confirm that you are 18+.
-    </p>
-
+  <div class="pages">
+    <a href="about.html">আমাদের সম্পর্কে</a>
+    <a href="contact.html">যোগাযোগ</a>
+    <a href="privacy.html">গোপনীয়তা নীতি</a>
   </div>
-
+</main>
+<footer>
+  <p><strong>Daily Bangla</strong></p>
+  <p>© <span id="year"></span> Daily Bangla. সর্বস্বত্ব সংরক্ষিত।</p>
+  <p>বিজ্ঞাপন লিংকগুলো বাহ্যিক ওয়েবসাইটে নিয়ে যায়।</p>
+</footer>
+<script>
+  function toggleArticle(button) {
+    const body = button.nextElementSibling;
+    const open = body.style.display === "block";
+    body.style.display = open ? "none" : "block";
+    button.textContent = open ? "আরও পড়ুন" : "কম দেখুন";
+  }
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
